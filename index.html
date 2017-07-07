@@ -24,6 +24,85 @@ body {font-family: "Lato", sans-serif}
    font-weight: 800;
 }
 
+.image-zoom-container {
+  list-style: none;
+  font-size: 0px;
+}
+.zoom-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 16%;
+  font-size: 16px;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  vertical-align: top;
+  /*box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;*/
+}
+.zoom-container img {
+  display: block;
+  width: 100%;
+  align:center;
+  height: auto;
+  -webkit-transition: all .5s ease; /* Safari and Chrome */
+        -moz-transition: all .5s ease; /* Firefox */
+        -ms-transition: all .5s ease; /* IE 9 */
+        -o-transition: all .5s ease; /* Opera */
+        transition: all .5s ease;
+}
+.zoom-container .zoom-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, .0);
+  -webkit-transition: all .5s ease; /* Safari and Chrome */
+        -moz-transition: all .5s ease; /* Firefox */
+        -ms-transition: all .5s ease; /* IE 9 */
+        -o-transition: all .5s ease; /* Opera */
+        transition: all .5s ease;
+}
+.zoom-container .zoom-caption h3 {
+  display: block;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #DDD;
+  margin: 23% 0 0;
+  padding: 10px 0;
+  border-top: 5px solid rgba(255, 255, 255, .15);
+  border-bottom: 5px solid rgba(255, 255, 255, .15);
+}
+.zoom-container:hover img {
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+        -moz-transform:scale(1.25); /* Firefox */
+        -ms-transform:scale(1.25); /* IE 9 */
+        -o-transform:scale(1.25); /* Opera */
+         transform:scale(1.25);
+}
+.zoom-container:hover .zoom-caption {
+  background: none;
+}
+
+@media (max-width: 767px) {
+  .zoom-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .zoom-container {
+    width: 100%;
+  }
+}
+
 
 </style>
 <body>
@@ -229,7 +308,7 @@ From an Institution known worldwide for its academic prowess, we have produced n
     <!-- <p class="w3-opacity"><i>Be Updated with Recent News</i></p>
     <p class="w3-justify"><iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=hlvuefc0tu7e5uicge32g1hhj4%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Asia%2FCalcutta" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
     <p>
-      <table cellpadding="20" cellspacing="20">
+      <!-- <table cellpadding="20" cellspacing="20">
         <tr>
           <td><a href="./aquatics.html"><img src="./images/logos/Aquatics.png" height="120px"></a></td>
           <td><a href="./athletics.html"><img src="./images/logos/Athletics.png" height="120px"></a></td>
@@ -251,7 +330,129 @@ From an Institution known worldwide for its academic prowess, we have produced n
           <td><a href="./weightlifting.html"><img src="./images/logos/Weightlifting.png" height="120px"></a></td>
           <td></td>
         </tr>
-      </table>
+      </table> -->
+
+      <div class="image-zoom-container">
+  <div class="zoom-container">
+    <a href="./aquatics.html">
+      <span class="zoom-caption">
+        <h3>Aquatics</h3>
+      </span>
+      <img src="./images/logos/Aquatics.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./athletics.html">
+      <span class="zoom-caption">
+        <h3>Athletics</h3>
+      </span>
+      <img src="./images/logos/Athletics.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./badminton.html">
+      <span class="zoom-caption">
+        <h3>Badminton</h3>
+      </span>
+      <img src="./images/logos/Badminton.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./basketball.html">
+      <span class="zoom-caption">
+        <h3>Basketball</h3>
+      </span>
+      <img src="./images/logos/Basketball.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./cricket.html">
+      <span class="zoom-caption">
+        <h3>Cricket</h3>
+      </span>
+      <img src="./images/logos/Cricket.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./football.html">
+      <span class="zoom-caption">
+        <h3>Football</h3>
+      </span>
+      <img src="./images/logos/Football.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./hockey.html">
+      <span class="zoom-caption">
+        <h3>Hockey</h3>
+      </span>
+      <img src="./images/logos/Hockey.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./isc.html">
+      <span class="zoom-caption">
+        <h3>ISC</h3>
+      </span>
+      <img src="./images/logos/ISC.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./lawntennis.html">
+      <span class="zoom-caption">
+        <h3>Lawn<br>Tennis</h3>
+      </span>
+      <img src="./images/logos/Lawn Tennis.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./squash.html">
+      <span class="zoom-caption">
+        <h3>Squash</h3>
+      </span>
+      <img src="./images/logos/Squash.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./tabletennis.html">
+      <span class="zoom-caption">
+        <h3>Table<br>Tennis</h3>
+      </span>
+      <img src="./images/logos/Table Tennis.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./volleyball.html">
+      <span class="zoom-caption">
+        <h3>Volleyball</h3>
+      </span>
+      <img src="./images/logos/Volleyball.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  <div class="zoom-container">
+    <a href="./weightlifting.html">
+      <span class="zoom-caption">
+        <h3>Weight<br>Lifting</h3>
+      </span>
+      <img src="./images/logos/Weightlifting.png" />
+    </a>
+  </div>
+  <!--/.zoom-container-->
+  ...
+</div>
+<!--/.image-zoom-container-->
     </p>
     </div>
   </div>
